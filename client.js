@@ -5,9 +5,9 @@ myApp.controller('GuessWhoController',function(){
     var guess = this;
     guess.message = 'names clicked:'
     var people = [
-        { name: 'Chris', github: 'christopher-black', show:false},
-        { name: 'Kris', github: 'kdszafranski', show:false},
-        { name: 'Ally', github: 'lysautumn', show:false}
+        { name: 'Chris', github: 'christopher-black'},
+        { name: 'Kris', github: 'kdszafranski'},
+        { name: 'Ally', github: 'lysautumn'}
     ];
     guess.people = people;
 
