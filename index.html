@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="angular.min.js"></script>
+        <script src="client.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="GuessWhoController as guess">
+                <input id="insert1" type="text" ng-model="form.input1">
+                <input id="insert2" type="text" ng-model="form.input2">
+                <button ng-click="guess.add(form.input1, form.input2)">Submit</button>
+                <br>{{guess.message}}
+            <ul>
+                <li ng-repeat="person in guess.people">
+                    <img ng-click="guess.showName(person)" ng-src="https://github.com/{{person.github}}.png?size=80">
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
