@@ -22,7 +22,6 @@ myApp.controller('GuessWhoController',function(){
 
     guess.showName = function (person){
         console.log(person);
-      //person.show = !person.show;
       guess.message =  guess.message + ' ' + person.name; 
     }
 })
