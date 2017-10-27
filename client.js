@@ -25,16 +25,3 @@ myApp.controller('GuessWhoController',function(){
       guess.message =  guess.message + ' ' + person.name; 
     }
 })
-
-this.arrayText = [{
-    text1: 'Hello',
-    text2: 'world',
-}];
-
-this.addText = function (text) {
-    this.arrayText.push(text);
-}
-this.form = {
-    text1: '',
-    text2: ''
-};
